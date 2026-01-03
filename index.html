@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop the latest products at great prices">
+    <title>ShopHub - Your Online Store</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <!-- SVG ICON DEFINITIONS -->
+    <svg style="display:none">
+        <symbol id="icon-home" viewBox="0 0 24 24">
+            <path d="M3 12l9-9 9 9"></path>
+            <path d="M9 21V9h6v12"></path>
+        </symbol>
+
+        <symbol id="icon-box" viewBox="0 0 24 24">
+            <path
+                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+            </path>
+        </symbol>
+
+        <symbol id="icon-tag" viewBox="0 0 24 24">
+            <path d="M20.59 13.41L11 3H4v7l9.59 9.59a2 2 0 0 0 2.82 0l4.18-4.18a2 2 0 0 0 0-2.82z"></path>
+            <circle cx="7.5" cy="7.5" r="1.5"></circle>
+        </symbol>
+
+        <symbol id="icon-info" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </symbol>
+
+        <symbol id="icon-mail" viewBox="0 0 24 24">
+            <path d="M4 4h16v16H4z"></path>
+            <path d="M22 6l-10 7L2 6"></path>
+        </symbol>
+
+        <symbol id="icon-search" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </symbol>
+
+        <symbol id="icon-user" viewBox="0 0 24 24">
+            <circle cx="12" cy="7" r="4"></circle>
+            <path d="M5.5 21a6.5 6.5 0 0 1 13 0"></path>
+        </symbol>
+
+        <symbol id="icon-cart" viewBox="0 0 24 24">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"></path>
+        </symbol>
+
+        <symbol id="icon-star" viewBox="0 0 24 24">
+            <polygon points="12 2 15 8.5 22 9.3 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.3 9 8.5 12 2"></polygon>
+        </symbol>
+    </svg>
+
+    <header class="site-header">
+                <div class="header-top">
+                    <div class="container">
+                        <p class="announcement">🚚 Free shipping on orders over $50!</p>
+                    </div>
+                </div>
+                <div class="header-main">
+                    <div class="container"> <a href="#" class="logo">
+                            <h1>ShopHub</h1>
+                        </a> <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false"> <span
+                                class="hamburger-icon"> <span></span> <span></span> <span></span> </span> </button>
+                        <nav class="main-nav" aria-label="Main navigation">
+                            <ul class="nav-list">
+                                <li class="nav-item"><a href="#" class="nav-link"><svg class="icon">
+                                            <use href="#icon-home"></use>
+                                        </svg> Home</a></li>
+                                <li class="nav-item"><a href="#products" class="nav-link"><svg class="icon">
+                                            <use href="#icon-box"></use>
+                                        </svg> Products</a></li>
+                                <li class="nav-item"><a href="#categories" class="nav-link"><svg class="icon">
+                                            <use href="#icon-tag"></use>
+                                        </svg> Categories</a></li>
+                                <li class="nav-item"><a href="#about" class="nav-link"><svg class="icon">
+                                            <use href="#icon-info"></use>
+                                        </svg> About</a></li>
+                                <li class="nav-item"><a href="#contact" class="nav-link"><svg class="icon">
+                                            <use href="#icon-mail"></use>
+                                        </svg> Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header-actions">
+                            <form role="search" class="search-form"> <label for="search" class="visually-hidden">Search
+                                    products</label> <input type="search" id="search" class="search-input"
+                                    placeholder="Search products..." aria-label="Search"> <button type="submit"
+                                    class="search-btn">
+                                    <svg>
+                                        <use href="#icon-search"></use>
+                                    </svg>
+                                </button> </form> <a href="#account" class="icon-link account-link"
+                                aria-label="Account">
+                                <svg class="icon">
+                                    <use href="#icon-user"></use>
+                                </svg>
+                            </a> <a href="#cart" class="icon-link cart-link" aria-label="Shopping cart">
+                                <svg class="icon">
+                                    <use href="#icon-cart"></use>
+                                </svg>
+                                <span class="cart-count">3</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section class="hero">
+                    <div class="container">
+                        <div class="hero-content">
+                            <h2 class="hero-title">Summer Collection 2024</h2>
+                            <p class="hero-description">Discover the latest trends and hottest deals</p> <a
+                                href="#products" class="btn btn-primary">Shop Now →</a>
+                        </div>
+                    </div>
+                </section>
+                <section id="categories" class="categories-section">
+                    <div class="container">
+                        <h2 class="section-title">Shop by Category</h2>
+                        <div class="categories-grid">
+                            <article class="category-card"> <a href="#electronics" class="category-link">
+                                    <div class="category-image"> <img src="https://via.placeholder.com/300x200"
+                                            alt="Electronics category" loading="lazy"> </div>
+                                    <h3 class="category-name">💻 Electronics</h3>
+                                </a> </article>
+                            <article class="category-card"> <a href="#clothing" class="category-link">
+                                    <div class="category-image"> <img src="https://via.placeholder.com/300x200"
+                                            alt="Clothing category" loading="lazy"> </div>
+                                    <h3 class="category-name">👕 Clothing</h3>
+                                </a> </article>
+                            <article class="category-card"> <a href="#home" class="category-link">
+                                    <div class="category-image"> <img src="https://via.placeholder.com/300x200"
+                                            alt="Home & Living category" loading="lazy"> </div>
+                                    <h3 class="category-name">🏡 Home & Living</h3>
+                                </a> </article>
+                            <article class="category-card"> <a href="#sports" class="category-link">
+                                    <div class="category-image"> <img src="https://via.placeholder.com/300x200"
+                                            alt="Sports category" loading="lazy"> </div>
+                                    <h3 class="category-name">⚽ Sports</h3>
+                                </a> </article>
+                        </div>
+                    </div>
+                </section>
+                <section id="products" class="products-section">
+                    <div class="container">
+                        <h2 class="section-title">Featured Products</h2>
+                        <div class="products-grid">
+                            <article class="product-card">
+                                <div class="product-image"> <img src="https://via.placeholder.com/300x300"
+                                        alt="Wireless Headphones" loading="lazy"> <span class="product-badge">🆕
+                                        New</span>
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">🎧 Wireless Headphones</h3>
+                                    <p class="product-description">Premium sound quality with noise cancellation</p>
+                                    <div class="product-rating" aria-label="Rating: 4.5 out of 5"> <span class="stars">
+                                            <svg class="star-icon">
+                                                <use href="#icon-star"></use>
+                                            </svg>
+                                            <svg class="star-icon">
+                                                <use href="#icon-star"></use>
+                                            </svg>
+                                            <svg class="star-icon">
+                                                <use href="#icon-star"></use>
+                                            </svg>
+                                            <svg class="star-icon">
+                                                <use href="#icon-star"></use>
+                                            </svg>
+                                            <svg class="star-icon">
+                                                <use href="#icon-star"></use>
+                                            </svg>
+                                        </span> <span class="rating-count">(128)</span> </div>
+                                    <div class="product-price"> <span class="price-current">$79.99</span> <span
+                                            class="price-original">$99.99</span> </div> <button
+                                        class="btn btn-add-cart">
+                                        <svg>
+                                            <use href="#icon-cart"></use>
+                                        </svg>
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-image"> <img src="https://via.placeholder.com/300x300"
+                                        alt="Smart Watch" loading="lazy"> <span class="product-badge sale">🔥
+                                        Sale</span> </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">⌚ Smart Watch</h3>
+                                    <p class="product-description">Track your fitness and stay connected</p>
+                                    <div class="product-rating" aria-label="Rating: 4 out of 5"> <span
+                                            class="stars"><svg class="star-icon">
+                                                <use href="#icon-star"></use>
+                                            </svg>
+                                            <svg class="star-icon">
+                                                <use href="#icon-star"></use>
+                                            </svg>
+                                            <svg class="star-icon">
+                                                <use href="#icon-star"></use>
+                                            </svg>
+                                            <svg class="star-icon">
+                                                <use href="#icon-star"></use>
+                                            </svg></span> <span class="rating-count">(94)</span> </div>
+                                    <div class="product-price"> <span class="price-current">$149.99</span> </div>
+                                    <button class="btn btn-add-cart">
+                                        <svg>
+                                            <use href="#icon-cart"></use>
+                                        </svg>
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-image"> <img src="https://via.placeholder.com/300x300"
+                                        alt="Laptop Backpack" loading="lazy"> </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">🎒 Laptop Backpack</h3>
+                                    <p class="product-description">Durable and stylish for everyday use</p>
+                                    <div class="product-rating" aria-label="Rating: 5 out of 5"> <span
+                                            class="stars"><svg class="star-icon">
+                                                <use href="#icon-star"></use>
+                                            </svg>
+                                            <svg class="star-icon">
+                                                <use href="#icon-star"></use>
+                                            </svg>
+                                            <svg class="star-icon">
+                                                <use href="#icon-star"></use>
+                                            </svg>
+                                            <svg class="star-icon">
+                                                <use href="#icon-star"></use>
+                                            </svg>
+                                            <svg class="star-icon">
+                                                <use href="#icon-star"></use>
+                                            </svg></span> <span class="rating-count">(203)</span> </div>
+                                    <div class="product-price"> <span class="price-current">$49.99</span> </div> <button
+                                        class="btn btn-add-cart">
+                                        <svg>
+                                            <use href="#icon-cart"></use>
+                                        </svg>
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-image"> <img src="https://via.placeholder.com/300x300"
+                                        alt="Running Shoes" loading="lazy"> </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">👟 Running Shoes</h3>
+                                    <p class="product-description">Comfortable and lightweight for runners</p>
+                                    <div class="product-rating" aria-label="Rating: 4.5 out of 5"> <span
+                                            class="stars"><svg class="star-icon">
+                                                <use href="#icon-star"></use>
+                                            </svg>
+                                            <svg class="star-icon">
+                                                <use href="#icon-star"></use>
+                                            </svg>
+                                            <svg class="star-icon">
+                                                <use href="#icon-star"></use>
+                                            </svg>
+                                            <svg class="star-icon">
+                                                <use href="#icon-star"></use>
+                                            </svg></span> <span class="rating-count">(87)</span> </div>
+                                    <div class="product-price"> <span class="price-current">$89.99</span> </div> <button
+                                        class="btn btn-add-cart">
+                                        <svg>
+                                            <use href="#icon-cart"></use>
+                                        </svg>
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <section class="newsletter-section">
+                    <div class="container">
+                        <div class="newsletter-content">
+                            <h2 class="newsletter-title">📬 Stay Updated</h2>
+                            <p class="newsletter-description">Subscribe to our newsletter for exclusive deals and
+                                updates</p>
+                            <form class="newsletter-form"> <label for="email" class="visually-hidden">Email
+                                    address</label>
+                                <input type="email" id="email" class="newsletter-input"
+                                    placeholder="✉️ Enter your email" required> <button type="submit"
+                                    class="btn btn-primary">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="site-footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-section">
+                            <h3 class="footer-title">About ShopHub</h3>
+                            <p class="footer-text">Your trusted online shopping destination for quality products at
+                                great
+                                prices.</p>
+                        </div>
+                        <div class="footer-section">
+                            <h3 class="footer-title">Customer Service</h3>
+                            <ul class="footer-links">
+                                <li><a href="#contact">📞 Contact Us</a></li>
+                                <li><a href="#shipping">📦 Shipping Information</a></li>
+                                <li><a href="#returns">↩️ Returns & Exchanges</a></li>
+                                <li><a href="#faq">❓ FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h3 class="footer-title">Shop</h3>
+                            <ul class="footer-links">
+                                <li><a href="#new">✨ New Arrivals</a></li>
+                                <li><a href="#bestsellers">🔥 Best Sellers</a></li>
+                                <li><a href="#sale">💰 Sale</a></li>
+                                <li><a href="#brands">🏆 Brands</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h3 class="footer-title">Follow Us</h3>
+                            <ul class="social-links">
+                                <li><a href="#facebook" aria-label="Facebook">📘 Facebook</a></li>
+                                <li><a href="#instagram" aria-label="Instagram">📸 Instagram</a></li>
+                                <li><a href="#twitter" aria-label="Twitter">🐦 Twitter</a></li>
+                                <li><a href="#pinterest" aria-label="Pinterest">📌 Pinterest</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p class="copyright">© 2024 ShopHub. All rights reserved.</p>
+                        <ul class="footer-legal">
+                            <li><a href="#privacy">🔒 Privacy Policy</a></li>
+                            <li><a href="#terms">📄 Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            <script src="script.js"></script>
+</body>
+
+</html>

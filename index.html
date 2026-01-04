@@ -12,7 +12,7 @@
 
 <body>
     <!-- SVG ICON DEFINITIONS -->
-    <svg style="display:none">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
         <symbol id="icon-home" viewBox="0 0 24 24">
             <path d="M3 12l9-9 9 9"></path>
             <path d="M9 21V9h6v12"></path>
@@ -51,44 +51,10 @@
             <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"></path>
         </symbol>
 
-        <symbol id="icon-star-full" viewBox="0 0 24 24">
-            <polygon points="12,2 15,9 22,9 17,14 18,21 12,17 6,21 7,14 2,9 9,9" fill="currentColor"/>
+        <symbol id="icon-star" viewBox="0 0 24 24">
+            <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
         </symbol>
-        
-        <symbol id="icon-star-half" viewBox="0 0 24 24">
-  <defs>
-    <linearGradient id="half-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="50%" stop-color="currentColor" />
-      <stop offset="50%" stop-color="transparent" />
-    </linearGradient>
-  </defs>
-
-  <!-- Filled half -->
-  <polygon
-    points="12,2 15,9 22,9 17,14 18,21 12,17 6,21 7,14 2,9 9,9"
-    fill="url(#half-grad)"
-  />
-
-  <!-- Outline -->
-  <polygon
-    points="12,2 15,9 22,9 17,14 18,21 12,17 6,21 7,14 2,9 9,9"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="2"
-  />
-</symbol>
-
-
-
-        <symbol id="icon-star-empty" viewBox="0 0 24 24">
-  <polygon
-    points="12,2 15,9 22,9 17,14 18,21 12,17 6,21 7,14 2,9 9,9"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="2"
-  />
-</symbol>
-
 
         <symbol id="icon-clock" viewBox="0 0 24 24">
             <circle cx="12" cy="12" r="10"></circle>
@@ -97,22 +63,19 @@
         </symbol>
 
         <symbol id="icon-fire" viewBox="0 0 24 24">
-  <path d="M12 2s6 6 6 12a6 6 0 1 1-12 0C6 8 12 2 12 2z"></path>
-</symbol>
-
-
-
+            <path d="M12 2s6 6 6 12a6 6 0 1 1-12 0C6 8 12 2 12 2z"></path>
+        </symbol>
     </svg>
 
     <header class="site-header">
         <div class="header-top">
             <div class="container">
-                <p class="announcement"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                    class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
-                </svg>
- Free shipping on orders over $50!</p>
+                <p class="announcement"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                    </svg>
+                    Free shipping on orders over $50!</p>
             </div>
         </div>
         <div class="header-main">
@@ -163,10 +126,12 @@
                 <div class="hero-content">
                     <h2 class="hero-title">Summer Collection 2024</h2>
                     <p class="hero-description">Discover the latest trends and hottest deals</p> <a href="#products"
-                        class="btn btn-primary">Shop Now <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-</svg>
-</a>
+                        class="btn btn-primary">Shop Now <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </section>
@@ -217,19 +182,25 @@
                             <p class="product-description">Premium sound quality with noise cancellation</p>
                             <div class="product-rating" aria-label="Rating: 4.5 out of 5"> <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
-                                    <svg class="star-icon">
-                                        <use href="#icon-star-half"></use>
+                                    <svg class="star-icon" width="24" height="24" viewbox="0 0 24 24">
+                                        <defs>
+                                            <mask id="half-mask" maskUnits="userSpaceOnUse">
+                                                <rect x="0" y="0" width="12" height="24" fill="white" />
+                                            </mask>
+                                        </defs>
+                                        <use href="#icon-star" fill="none" stroke="currentColor" stroke-width="2" />
+                                        <use href="#icon-star" fill="currentColor" mask="url(#half-mask)" />
                                     </svg>
                                 </span> <span class="rating-count">(128)</span> </div>
                             <div class="product-price"> <span class="price-current">$79.99</span> <span
@@ -247,23 +218,28 @@
                             <span class="product-badge sale"><svg class="badge-icon">
                                     <use href="#icon-fire"></use>
                                 </svg>
-                                Sale</span> </div>
+                                Sale</span>
+                        </div>
                         <div class="product-info">
                             <h3 class="product-name">Smart Watch</h3>
                             <p class="product-description">Track your fitness and stay connected</p>
                             <div class="product-rating" aria-label="Rating: 4 out of 5"> <span class="stars"><svg
                                         class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
-                                    </svg></span> <span class="rating-count">(94)</span> </div>
+                                        <use href="#icon-star" fill="currentColor"></use>
+                                    </svg>
+                                    <svg class="star-icon">
+                                        <use href="#icon-star" fill="none"></use>
+                                    </svg>
+                                </span> <span class="rating-count">(94)</span> </div>
                             <div class="product-price"> <span class="price-current">$149.99</span> </div>
                             <button class="btn btn-add-cart">
                                 <svg>
@@ -294,19 +270,25 @@
                             <div class="product-rating" aria-label="Rating: 4.5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
-                                    <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                    <svg class="star-icon" width="24" height="24" viewbox="0 0 24 24">
+                                        <defs>
+                                            <mask id="half-mask" maskUnits="userSpaceOnUse">
+                                                <rect x="0" y="0" width="12" height="24" fill="white" />
+                                            </mask>
+                                        </defs>
+                                        <use href="#icon-star" fill="none" stroke="currentColor" stroke-width="2" />
+                                        <use href="#icon-star" fill="currentColor" mask="url(#half-mask)" />
                                     </svg>
                                 </span>
                                 <span class="rating-count">(245)</span>
@@ -338,16 +320,19 @@
                             <div class="product-rating" aria-label="Rating: 4 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
+                                    </svg>
+                                    <svg class="star-icon">
+                                        <use href="#icon-star" fill="none"></use>
                                     </svg>
                                 </span>
                                 <span class="rating-count">(156)</span>
@@ -386,19 +371,19 @@
                             <div class="product-rating" aria-label="Rating: 5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                 </span>
                                 <span class="rating-count">(432)</span>
@@ -431,19 +416,25 @@
                             <div class="product-rating" aria-label="Rating: 4.5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
-                                    <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                    <svg class="star-icon" width="24" height="24" viewbox="0 0 24 24">
+                                        <defs>
+                                            <mask id="half-mask" maskUnits="userSpaceOnUse">
+                                                <rect x="0" y="0" width="12" height="24" fill="white" />
+                                            </mask>
+                                        </defs>
+                                        <use href="#icon-star" fill="none" stroke="currentColor" stroke-width="2" />
+                                        <use href="#icon-star" fill="currentColor" mask="url(#half-mask)" />
                                     </svg>
                                 </span>
                                 <span class="rating-count">(189)</span>
@@ -475,19 +466,25 @@
                             <div class="product-rating" aria-label="Rating: 4.5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
-                                    <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                    <svg class="star-icon" width="24" height="24" viewbox="0 0 24 24">
+                                        <defs>
+                                            <mask id="half-mask" maskUnits="userSpaceOnUse">
+                                                <rect x="0" y="0" width="12" height="24" fill="white" />
+                                            </mask>
+                                        </defs>
+                                        <use href="#icon-star" fill="none" stroke="currentColor" stroke-width="2" />
+                                        <use href="#icon-star" fill="currentColor" mask="url(#half-mask)" />
                                     </svg>
                                 </span>
                                 <span class="rating-count">(312)</span>
@@ -525,19 +522,19 @@
                             <div class="product-rating" aria-label="Rating: 5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                 </span>
                                 <span class="rating-count">(567)</span>
@@ -569,16 +566,19 @@
                             <div class="product-rating" aria-label="Rating: 4 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
+                                    </svg>
+                                    <svg class="star-icon">
+                                        <use href="#icon-star" fill="none"></use>
                                     </svg>
                                 </span>
                                 <span class="rating-count">(223)</span>
@@ -610,19 +610,25 @@
                             <div class="product-rating" aria-label="Rating: 4.5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
-                                    <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                    <svg class="star-icon" width="24" height="24" viewbox="0 0 24 24">
+                                        <defs>
+                                            <mask id="half-mask" maskUnits="userSpaceOnUse">
+                                                <rect x="0" y="0" width="12" height="24" fill="white" />
+                                            </mask>
+                                        </defs>
+                                        <use href="#icon-star" fill="none" stroke="currentColor" stroke-width="2" />
+                                        <use href="#icon-star" fill="currentColor" mask="url(#half-mask)" />
                                     </svg>
                                 </span>
                                 <span class="rating-count">(178)</span>
@@ -656,19 +662,19 @@
                             <p class="product-description">Durable and stylish for everyday use</p>
                             <div class="product-rating" aria-label="Rating: 5 out of 5"> <span class="stars"><svg
                                         class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg></span> <span class="rating-count">(203)</span> </div>
                             <div class="product-price"> <span class="price-current">$49.99</span> </div> <button
                                 class="btn btn-add-cart">
@@ -687,17 +693,27 @@
                             <p class="product-description">Comfortable and lightweight for runners</p>
                             <div class="product-rating" aria-label="Rating: 4.5 out of 5"> <span class="stars"><svg
                                         class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
-                                    </svg></span> <span class="rating-count">(87)</span> </div>
+                                        <use href="#icon-star" fill="currentColor"></use>
+                                    </svg>
+                                    <svg class="star-icon" width="24" height="24" viewbox="0 0 24 24">
+                                        <defs>
+                                            <mask id="half-mask" maskUnits="userSpaceOnUse">
+                                                <rect x="0" y="0" width="12" height="24" fill="white" />
+                                            </mask>
+                                        </defs>
+                                        <use href="#icon-star" fill="none" stroke="currentColor" stroke-width="2" />
+                                        <use href="#icon-star" fill="currentColor" mask="url(#half-mask)" />
+                                    </svg>
+                                </span> <span class="rating-count">(87)</span> </div>
                             <div class="product-price"> <span class="price-current">$89.99</span> </div> <button
                                 class="btn btn-add-cart">
                                 <svg>
@@ -728,19 +744,25 @@
                             <div class="product-rating" aria-label="Rating: 4.5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
-                                    <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                    <svg class="star-icon" width="24" height="24" viewbox="0 0 24 24">
+                                        <defs>
+                                            <mask id="half-mask" maskUnits="userSpaceOnUse">
+                                                <rect x="0" y="0" width="12" height="24" fill="white" />
+                                            </mask>
+                                        </defs>
+                                        <use href="#icon-star" fill="none" stroke="currentColor" stroke-width="2" />
+                                        <use href="#icon-star" fill="currentColor" mask="url(#half-mask)" />
                                     </svg>
                                 </span>
                                 <span class="rating-count">(412)</span>
@@ -773,19 +795,19 @@
                             <div class="product-rating" aria-label="Rating: 5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                 </span>
                                 <span class="rating-count">(298)</span>
@@ -820,22 +842,28 @@
                                 Pullover Hoodie
                             </h3>
                             <p class="product-description">Soft fleece hoodie with kangaroo pocket</p>
-                            <div class="product-rating" aria-label="Rating: 4.5 out of 5">
+                            <div class="product-rating" aria-label="Rating: 4   ">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
-                                    <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                    <svg class="star-icon" width="24" height="24" viewbox="0 0 24 24">
+                                        <defs>
+                                            <mask id="half-mask" maskUnits="userSpaceOnUse">
+                                                <rect x="0" y="0" width="12" height="24" fill="white" />
+                                            </mask>
+                                        </defs>
+                                        <use href="#icon-star" fill="none" stroke="currentColor" stroke-width="2" />
+                                        <use href="#icon-star" fill="currentColor" mask="url(#half-mask)" />
                                     </svg>
                                 </span>
                                 <span class="rating-count">(523)</span>
@@ -867,16 +895,19 @@
                             <div class="product-rating" aria-label="Rating: 4 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
+                                    </svg>
+                                    <svg class="star-icon">
+                                        <use href="#icon-star" fill="none"></use>
                                     </svg>
                                 </span>
                                 <span class="rating-count">(267)</span>
@@ -908,19 +939,25 @@
                             <div class="product-rating" aria-label="Rating: 4.5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
-                                    <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                    <svg class="star-icon" width="24" height="24" viewbox="0 0 24 24">
+                                        <defs>
+                                            <mask id="half-mask" maskUnits="userSpaceOnUse">
+                                                <rect x="0" y="0" width="12" height="24" fill="white" />
+                                            </mask>
+                                        </defs>
+                                        <use href="#icon-star" fill="none" stroke="currentColor" stroke-width="2" />
+                                        <use href="#icon-star" fill="currentColor" mask="url(#half-mask)" />
                                     </svg>
                                 </span>
                                 <span class="rating-count">(345)</span>
@@ -958,19 +995,19 @@
                             <div class="product-rating" aria-label="Rating: 5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                 </span>
                                 <span class="rating-count">(189)</span>
@@ -1003,19 +1040,25 @@
                             <div class="product-rating" aria-label="Rating: 4.5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
-                                    <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                    <svg class="star-icon" width="24" height="24" viewbox="0 0 24 24">
+                                        <defs>
+                                            <mask id="half-mask" maskUnits="userSpaceOnUse">
+                                                <rect x="0" y="0" width="12" height="24" fill="white" />
+                                            </mask>
+                                        </defs>
+                                        <use href="#icon-star" fill="none" stroke="currentColor" stroke-width="2" />
+                                        <use href="#icon-star" fill="currentColor" mask="url(#half-mask)" />
                                     </svg>
                                 </span>
                                 <span class="rating-count">(234)</span>
@@ -1047,16 +1090,19 @@
                             <div class="product-rating" aria-label="Rating: 4 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
+                                    </svg>
+                                    <svg class="star-icon">
+                                        <use href="#icon-star" fill="none"></use>
                                     </svg>
                                 </span>
                                 <span class="rating-count">(456)</span>
@@ -1103,19 +1149,19 @@
                             <div class="product-rating" aria-label="Rating: 5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                 </span>
                                 <span class="rating-count">(678)</span>
@@ -1147,19 +1193,25 @@
                             <div class="product-rating" aria-label="Rating: 4.5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
-                                    <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                    <svg class="star-icon" width="24" height="24" viewbox="0 0 24 24">
+                                        <defs>
+                                            <mask id="half-mask" maskUnits="userSpaceOnUse">
+                                                <rect x="0" y="0" width="12" height="24" fill="white" />
+                                            </mask>
+                                        </defs>
+                                        <use href="#icon-star" fill="none" stroke="currentColor" stroke-width="2" />
+                                        <use href="#icon-star" fill="currentColor" mask="url(#half-mask)" />
                                     </svg>
                                 </span>
                                 <span class="rating-count">(342)</span>
@@ -1196,19 +1248,25 @@
                             <div class="product-rating" aria-label="Rating: 4.5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
-                                    <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                    <svg class="star-icon" width="24" height="24" viewbox="0 0 24 24">
+                                        <defs>
+                                            <mask id="half-mask" maskUnits="userSpaceOnUse">
+                                                <rect x="0" y="0" width="12" height="24" fill="white" />
+                                            </mask>
+                                        </defs>
+                                        <use href="#icon-star" fill="none" stroke="currentColor" stroke-width="2" />
+                                        <use href="#icon-star" fill="currentColor" mask="url(#half-mask)" />
                                     </svg>
                                 </span>
                                 <span class="rating-count">(589)</span>
@@ -1241,16 +1299,19 @@
                             <div class="product-rating" aria-label="Rating: 4 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
+                                    </svg>
+                                    <svg class="star-icon">
+                                        <use href="#icon-star" fill="none"></use>
                                     </svg>
                                 </span>
                                 <span class="rating-count">(234)</span>
@@ -1282,19 +1343,19 @@
                             <div class="product-rating" aria-label="Rating: 5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                 </span>
                                 <span class="rating-count">(445)</span>
@@ -1326,19 +1387,25 @@
                             <div class="product-rating" aria-label="Rating: 4.5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
-                                    <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                    <svg class="star-icon" width="24" height="24" viewbox="0 0 24 24">
+                                        <defs>
+                                            <mask id="half-mask" maskUnits="userSpaceOnUse">
+                                                <rect x="0" y="0" width="12" height="24" fill="white" />
+                                            </mask>
+                                        </defs>
+                                        <use href="#icon-star" fill="none" stroke="currentColor" stroke-width="2" />
+                                        <use href="#icon-star" fill="currentColor" mask="url(#half-mask)" />
                                     </svg>
                                 </span>
                                 <span class="rating-count">(712)</span>
@@ -1376,19 +1443,25 @@
                             <div class="product-rating" aria-label="Rating: 4.5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
-                                    <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                    <svg class="star-icon" width="24" height="24" viewbox="0 0 24 24">
+                                        <defs>
+                                            <mask id="half-mask" maskUnits="userSpaceOnUse">
+                                                <rect x="0" y="0" width="12" height="24" fill="white" />
+                                            </mask>
+                                        </defs>
+                                        <use href="#icon-star" fill="none" stroke="currentColor" stroke-width="2" />
+                                        <use href="#icon-star" fill="currentColor" mask="url(#half-mask)" />
                                     </svg>
                                 </span>
                                 <span class="rating-count">(267)</span>
@@ -1420,19 +1493,25 @@
                             <div class="product-rating" aria-label="Rating: 4.5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
-                                    <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                    <svg class="star-icon" width="24" height="24" viewbox="0 0 24 24">
+                                        <defs>
+                                            <mask id="half-mask" maskUnits="userSpaceOnUse">
+                                                <rect x="0" y="0" width="12" height="24" fill="white" />
+                                            </mask>
+                                        </defs>
+                                        <use href="#icon-star" fill="none" stroke="currentColor" stroke-width="2" />
+                                        <use href="#icon-star" fill="currentColor" mask="url(#half-mask)" />
                                     </svg>
                                 </span>
                                 <span class="rating-count">(389)</span>
@@ -1464,16 +1543,19 @@
                             <div class="product-rating" aria-label="Rating: 4 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
+                                    </svg>
+                                    <svg class="star-icon">
+                                        <use href="#icon-star" fill="none"></use>
                                     </svg>
                                 </span>
                                 <span class="rating-count">(198)</span>
@@ -1511,19 +1593,19 @@
                             <div class="product-rating" aria-label="Rating: 5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                 </span>
                                 <span class="rating-count">(321)</span>
@@ -1571,19 +1653,25 @@
                             <div class="product-rating" aria-label="Rating: 4.5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
-                                    <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                    <svg class="star-icon" width="24" height="24" viewbox="0 0 24 24">
+                                        <defs>
+                                            <mask id="half-mask" maskUnits="userSpaceOnUse">
+                                                <rect x="0" y="0" width="12" height="24" fill="white" />
+                                            </mask>
+                                        </defs>
+                                        <use href="#icon-star" fill="none" stroke="currentColor" stroke-width="2" />
+                                        <use href="#icon-star" fill="currentColor" mask="url(#half-mask)" />
                                     </svg>
                                 </span>
                                 <span class="rating-count">(412)</span>
@@ -1615,19 +1703,19 @@
                             <div class="product-rating" aria-label="Rating: 5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                 </span>
                                 <span class="rating-count">(567)</span>
@@ -1665,19 +1753,25 @@
                             <div class="product-rating" aria-label="Rating: 4.5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
-                                    <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                    <svg class="star-icon" width="24" height="24" viewbox="0 0 24 24">
+                                        <defs>
+                                            <mask id="half-mask" maskUnits="userSpaceOnUse">
+                                                <rect x="0" y="0" width="12" height="24" fill="white" />
+                                            </mask>
+                                        </defs>
+                                        <use href="#icon-star" fill="none" stroke="currentColor" stroke-width="2" />
+                                        <use href="#icon-star" fill="currentColor" mask="url(#half-mask)" />
                                     </svg>
                                 </span>
                                 <span class="rating-count">(289)</span>
@@ -1710,19 +1804,25 @@
                             <div class="product-rating" aria-label="Rating: 4.5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
-                                    <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                    <svg class="star-icon" width="24" height="24" viewbox="0 0 24 24">
+                                        <defs>
+                                            <mask id="half-mask" maskUnits="userSpaceOnUse">
+                                                <rect x="0" y="0" width="12" height="24" fill="white" />
+                                            </mask>
+                                        </defs>
+                                        <use href="#icon-star" fill="none" stroke="currentColor" stroke-width="2" />
+                                        <use href="#icon-star" fill="currentColor" mask="url(#half-mask)" />
                                     </svg>
                                 </span>
                                 <span class="rating-count">(645)</span>
@@ -1754,16 +1854,19 @@
                             <div class="product-rating" aria-label="Rating: 4 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
+                                    </svg>
+                                    <svg class="star-icon">
+                                        <use href="#icon-star" fill="none"></use>
                                     </svg>
                                 </span>
                                 <span class="rating-count">(234)</span>
@@ -1795,19 +1898,25 @@
                             <div class="product-rating" aria-label="Rating: 4.5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
-                                    <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                    <svg class="star-icon" width="24" height="24" viewbox="0 0 24 24">
+                                        <defs>
+                                            <mask id="half-mask" maskUnits="userSpaceOnUse">
+                                                <rect x="0" y="0" width="12" height="24" fill="white" />
+                                            </mask>
+                                        </defs>
+                                        <use href="#icon-star" fill="none" stroke="currentColor" stroke-width="2" />
+                                        <use href="#icon-star" fill="currentColor" mask="url(#half-mask)" />
                                     </svg>
                                 </span>
                                 <span class="rating-count">(378)</span>
@@ -1845,19 +1954,19 @@
                             <div class="product-rating" aria-label="Rating: 5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                 </span>
                                 <span class="rating-count">(512)</span>
@@ -1889,19 +1998,25 @@
                             <div class="product-rating" aria-label="Rating: 4.5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
-                                    <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                    <svg class="star-icon" width="24" height="24" viewbox="0 0 24 24">
+                                        <defs>
+                                            <mask id="half-mask" maskUnits="userSpaceOnUse">
+                                                <rect x="0" y="0" width="12" height="24" fill="white" />
+                                            </mask>
+                                        </defs>
+                                        <use href="#icon-star" fill="none" stroke="currentColor" stroke-width="2" />
+                                        <use href="#icon-star" fill="currentColor" mask="url(#half-mask)" />
                                     </svg>
                                 </span>
                                 <span class="rating-count">(456)</span>
@@ -1939,19 +2054,19 @@
                             <div class="product-rating" aria-label="Rating: 5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                 </span>
                                 <span class="rating-count">(789)</span>
@@ -1984,19 +2099,25 @@
                             <div class="product-rating" aria-label="Rating: 4.5 out of 5">
                                 <span class="stars">
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
                                     <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                        <use href="#icon-star" fill="currentColor"></use>
                                     </svg>
-                                    <svg class="star-icon">
-                                        <use href="#icon-star-full"></use>
+                                    <svg class="star-icon" width="24" height="24" viewbox="0 0 24 24">
+                                        <defs>
+                                            <mask id="half-mask" maskUnits="userSpaceOnUse">
+                                                <rect x="0" y="0" width="12" height="24" fill="white" />
+                                            </mask>
+                                        </defs>
+                                        <use href="#icon-star" fill="none" stroke="currentColor" stroke-width="2" />
+                                        <use href="#icon-star" fill="currentColor" mask="url(#half-mask)" />
                                     </svg>
                                 </span>
                                 <span class="rating-count">(334)</span>

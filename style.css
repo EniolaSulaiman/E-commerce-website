@@ -124,7 +124,6 @@ svg {
     width: 1rem;
     height: 1rem;
     color: var(--accent-color);
-    fill: var(--accent-color);
 }
 
 .star-icon.half {

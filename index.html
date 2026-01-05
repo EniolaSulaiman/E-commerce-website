@@ -7,6 +7,7 @@
     <meta name="description" content="Shop the latest products at great prices">
     <title>ShopHub - Your Online Store</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
 
 </head>
 
@@ -2513,6 +2514,171 @@
             </div>
         </div>
     </footer>
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-overlay"></div>
+        <div class="cart-modal-content">
+            <div class="cart-modal-header">
+                <h2>
+                    <svg class="icon">
+                        <use href="#icon-cart"></use>
+                    </svg>
+                    Shopping Cart
+                </h2>
+                <button class="cart-close-btn" aria-label="Close cart">
+                    <svg viewBox="0 0 24 24">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+    
+            <div class="cart-modal-body">
+                <div class="cart-items">
+                    <!-- Cart Item 1 -->
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="assets/wireless-headphones.jpg" alt="Wireless Headphones">
+                        </div>
+                        <div class="cart-item-details">
+                            <h3 class="cart-item-name">Wireless Headphones</h3>
+                            <p class="cart-item-description">Premium sound quality with noise cancellation</p>
+                            <div class="cart-item-price">$79.99</div>
+                        </div>
+                        <div class="cart-item-actions">
+                            <div class="cart-item-quantity">
+                                <button class="quantity-btn" aria-label="Decrease quantity">
+                                    <svg viewBox="0 0 24 24">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </button>
+                                <input type="number" class="quantity-input" value="1" min="1" readonly>
+                                <button class="quantity-btn" aria-label="Increase quantity">
+                                    <svg viewBox="0 0 24 24">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                            <button class="cart-item-remove" aria-label="Remove item">
+                                <svg viewBox="0 0 24 24">
+                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                    <path
+                                        d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+                                    </path>
+                                </svg>
+                                Remove
+                            </button>
+                        </div>
+                    </div>
+    
+                    <!-- Cart Item 2 -->
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="https://via.placeholder.com/100x100" alt="Smart Watch">
+                        </div>
+                        <div class="cart-item-details">
+                            <h3 class="cart-item-name">Smart Watch</h3>
+                            <p class="cart-item-description">Track your fitness and stay connected</p>
+                            <div class="cart-item-price">$149.99</div>
+                        </div>
+                        <div class="cart-item-actions">
+                            <div class="cart-item-quantity">
+                                <button class="quantity-btn" aria-label="Decrease quantity">
+                                    <svg viewBox="0 0 24 24">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </button>
+                                <input type="number" class="quantity-input" value="1" min="1" readonly>
+                                <button class="quantity-btn" aria-label="Increase quantity">
+                                    <svg viewBox="0 0 24 24">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                            <button class="cart-item-remove" aria-label="Remove item">
+                                <svg viewBox="0 0 24 24">
+                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                    <path
+                                        d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+                                    </path>
+                                </svg>
+                                Remove
+                            </button>
+                        </div>
+                    </div>
+    
+                    <!-- Cart Item 3 -->
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="assets/running-shoes.jpg" alt="Running Shoes">
+                        </div>
+                        <div class="cart-item-details">
+                            <h3 class="cart-item-name">Running Shoes</h3>
+                            <p class="cart-item-description">Comfortable and lightweight for runners</p>
+                            <div class="cart-item-price">$89.99</div>
+                        </div>
+                        <div class="cart-item-actions">
+                            <div class="cart-item-quantity">
+                                <button class="quantity-btn" aria-label="Decrease quantity">
+                                    <svg viewBox="0 0 24 24">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </button>
+                                <input type="number" class="quantity-input" value="2" min="1" readonly>
+                                <button class="quantity-btn" aria-label="Increase quantity">
+                                    <svg viewBox="0 0 24 24">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                            <button class="cart-item-remove" aria-label="Remove item">
+                                <svg viewBox="0 0 24 24">
+                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                    <path
+                                        d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+                                    </path>
+                                </svg>
+                                Remove
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="cart-modal-footer">
+                <div class="cart-summary">
+                    <div class="cart-summary-row">
+                        <span>Subtotal</span>
+                        <span class="cart-subtotal">$409.96</span>
+                    </div>
+                    <div class="cart-summary-row">
+                        <span>Shipping</span>
+                        <span class="cart-shipping">Free</span>
+                    </div>
+                    <div class="cart-summary-row">
+                        <span>Tax</span>
+                        <span class="cart-tax">$32.80</span>
+                    </div>
+                    <div class="cart-summary-row cart-total-row">
+                        <span>Total</span>
+                        <span class="cart-total">$442.76</span>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-checkout">
+                    Proceed to Checkout
+                    <svg>
+                        <use href="#icon-arrow-right"></use>
+                    </svg>
+                </button>
+                <button class="btn btn-secondary">
+                    Continue Shopping
+                </button>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 

@@ -138,3 +138,44 @@ searchForm.addEventListener('submit', (e) => {
         // In a real app, this would redirect or filter products
     }
 });
+
+// Cart Modal Functionality
+const cartModal = document.getElementById('cartModal');
+const cartLink = document.querySelector('.cart-link');
+const cartCloseBtn = document.querySelector('.cart-close-btn');
+const cartOverlay = document.querySelector('.cart-modal-overlay');
+const continueShopping = document.querySelector('.btn-secondary');
+
+// Open cart modal
+function openCart() {
+    cartModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+// Close cart modal
+function closeCart() {
+    cartModal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// Event listeners
+cartLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    openCart();
+});
+
+cartCloseBtn.addEventListener('click', closeCart);
+cartOverlay.addEventListener('click', closeCart);
+continueShopping.addEventListener('click', closeCart);
+
+// Close on escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && cartModal.classList.contains('active')) {
+        closeCart();
+    }
+});
+
+// Prevent modal content clicks from closing modal
+document.querySelector('.cart-modal-content').addEventListener('click', (e) => {
+    e.stopPropagation();
+});

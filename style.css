@@ -31,6 +31,8 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hiiden;
+    width: 100%;
 }
 
 body {
@@ -38,6 +40,8 @@ body {
     line-height: 1.6;
     color: var(--text-primary);
     background-color: var(--bg-primary);
+    overflow-x: hiiden;
+        width: 100%;
 }
 
 img {
@@ -155,11 +159,13 @@ svg {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    align-items: stretch;
 }
 
 .logo {
     display: flex;
     align-items: center;
+    width: fit-content;
 }
 
 .logo h1 {
@@ -305,12 +311,15 @@ svg {
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
 }
 
 .search-form {
     display: flex;
     flex: 1;
-    min-width: 200px;
+    min-width: 0;
+    max-width: 100%;
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
     overflow: hidden;
@@ -938,6 +947,12 @@ svg {
     grid-template-columns: 1fr;
     gap: 2rem;
     margin-bottom: 2rem;
+    width: 100%;
+}
+
+.footer-section{
+    min-width: 0;
+    word-wrap: break-word;
 }
 
 .footer-title {
@@ -957,6 +972,7 @@ svg {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    max-width: 100%;
 }
 
 .footer-links a,
@@ -966,6 +982,8 @@ svg {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    word-break: break-word;
+    max-width: 100%;
 }
 
 .footer-links a svg,
@@ -994,8 +1012,9 @@ svg {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    text-align: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 100%;
 }
 
 .copyright {
@@ -1007,8 +1026,9 @@ svg {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
     flex-wrap: wrap;
+    max-width: 100%;
 }
 
 .footer-legal a {
@@ -1035,34 +1055,21 @@ svg {
     stroke: var(--primary-light);
 }
 
-
-.footer-bottom {
-    padding-top: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
 .footer-bottom-left {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     text-align: center;
-}
-
-.footer-legal {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
 }
 
 .footer-developer {
     text-align: center;
     padding-top: 1.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 100%;
 }
 
 .footer-developer p {
@@ -1080,6 +1087,7 @@ svg {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .developer-links a {
@@ -1123,12 +1131,35 @@ svg {
 }
 
 /* Tablet Styles */
+@media (min-width: 640px) and (max-width: 767px) {
+    .container{
+        padding: - 1.5rem;
+    }
+
+    .header-actions{
+        gap: 0.75rem;
+    }
+
+    .search-form{
+        min-width: 0;
+        flex: 1 1 1auto;
+    }
+}
+
 @media (min-width: 640px) {
     .categories-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .contact-methods {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -1221,6 +1252,18 @@ svg {
         grid-template-columns: repeat(4, 1fr);
     }
 
+    .about-content {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1228,7 +1271,21 @@ svg {
     .footer-bottom {
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-bottom-left {
+        flex-direction: row;
+        align-items: center;
         text-align: left;
+        width: auto;
+    }
+
+    .footer-developer {
+        border-top: none;
+        padding-top: 0;
+        text-align: right;
+        width: auto;
     }
 }
 

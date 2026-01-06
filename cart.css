@@ -396,6 +396,11 @@
         gap: 0.5rem;
         margin-bottom: 1rem;
     }
+
+        .cart-notification.show {
+            right: 1rem;
+            left: 1rem;
+        }
 }
 
 @media (min-width: 641px) {

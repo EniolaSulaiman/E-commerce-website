@@ -327,6 +327,24 @@
     margin-bottom: 1.5rem;
 }
 
+.cart-notification {
+    position: fixed;
+    top: 5rem;
+    right: -300px;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-xl);
+    z-index: 10000;
+    transition: right var(--transition-speed) ease;
+    font-weight: 600;
+}
+
+.cart-notification.show {
+    right: 2rem;
+}
+
 @keyframes slideInRight {
     from {
         transform: translateX(100%);

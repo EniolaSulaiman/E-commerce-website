@@ -350,7 +350,6 @@ function initAddToCartButtons() {
         });
     });
 }
-initAddToCartButtons()
 
 // Cart Modal Functionality
 const cartModal = document.getElementById('cartModal');
@@ -408,6 +407,82 @@ document.querySelector('.cart-modal-content').addEventListener('click', (e) => {
     e.stopPropagation();
 });
 
-document.addEventListener(`DOMContentLoaded`, () => {
-    initCart()
-})
+function initCheckoutForm() {
+    const checkoutForm = document.getElementById('checkoutForm');
+    if (!checkoutForm) return;
+
+    checkoutForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        if (cart.length === 0) {
+            alert('Your cart is empty!');
+            return;
+        }
+
+        // Get form data
+        const formData = new FormData(checkoutForm);
+        const orderData = {
+            customer: {
+                firstName: formData.get('firstName'),
+                lastName: formData.get('lastName'),
+                email: formData.get('email'),
+                phone: formData.get('phone')
+            },
+            shipping: {
+                address: formData.get('address'),
+                city: formData.get('city'),
+                state: formData.get('state'),
+                zip: formData.get('zip'),
+                country: formData.get('country')
+            },
+            payment: {
+                cardNumber: formData.get('cardNumber'),
+                cardName: formData.get('cardName'),
+                expiry: formData.get('expiry'),
+                cvv: formData.get('cvv')
+            },
+            items: cart,
+            totals: {
+                subtotal: getCartSubtotal(),
+                shipping: getCartSubtotal() >= 50 ? 0 : 10,
+                tax: getCartSubtotal() * 0.08,
+                total: getCartSubtotal() + (getCartSubtotal() >= 50 ? 0 : 10) + (getCartSubtotal() * 0.08)
+            }
+        };
+
+        // Simulate order processing
+        const submitBtn = checkoutForm.querySelector('.btn-primary');
+        submitBtn.textContent = 'Processing...';
+        submitBtn.disabled = true;
+
+        setTimeout(() => {
+            // Clear cart
+            cart = [];
+            saveCart();
+            updateCartUI();
+
+            // Show success message
+            alert('Order placed successfully! Thank you for your purchase.');
+
+            // Reset form
+            checkoutForm.reset();
+            submitBtn.textContent = 'Place Order';
+            submitBtn.disabled = false;
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }, 2000);
+    });
+}
+
+// Initialize everything when DOM is loaded
+document.addEventListener('DOMContentLoaded', function () {
+    initCart();
+    initAddToCartButtons();
+    initCheckoutForm();
+
+    // Update checkout summary if on checkout page
+    if (document.getElementById('checkout')) {
+        updateCheckoutSummary();
+    }
+});
